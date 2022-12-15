@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Corporate Dashboard</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="assets/vendors/jvectormap/jquery-jvectormap.css">
+    <link rel="stylesheet" href="assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendors/owl-carousel-2/owl.theme.default.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="logo1.png" />
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+            <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+                <a class="sidebar-brand brand-logo" href="index.html">Corporate</a>
+                <a class="sidebar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+            </div>
+            <ul class="nav">
+                <li class="nav-item profile">
+                    <div class="profile-desc">
+                        <div class="profile-pic">
+                            <div class="count-indicator">
+                                <img class="img-xs rounded-circle " src="assets/images/faces/face15.jpg" alt="">
+                                <span class="count bg-success"></span>
+                            </div>
+                            <div class="profile-name">
+                                <h5 class="mb-0 font-weight-normal">Aman Patel</h5>
+                                <span></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="nav-item nav-category">
+                    <span class="nav-link">Navigation</span>
+                </li>
+                <li class="nav-item menu-items">
+                    <a class="nav-link" href="index.html">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-speedometer"></i>
+                        </span>
+                        <span class="menu-title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item menu-items">
+                    <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                        <span class="menu-icon">
+                            <i class="mdi mdi-laptop"></i>
+                        </span>
+                        <span class="menu-title">Dummy</span>
+                        <!-- <i class="menu-arrow"></i> -->
+                    </a>
+                    <div class="collapse" id="ui-basic">
+
+                    </div>
+                </li>
+                <li class="nav-item menu-items">
+                    <a class="nav-link" href="#">
+                        <!-- pages/forms/basic_elements.html -->
+                        <span class="menu-icon">
+                            <i class="mdi mdi-playlist-play"></i>
+                        </span>
+                        <span class="menu-title">Dummy</span>
+                    </a>
+                </li>
+                <li class="nav-item menu-items">
+                    <a class="nav-link" href="#">
+                        <!-- pages/tables/basic-table.html -->
+                        <span class="menu-icon">
+                            <i class="mdi mdi-table-large"></i>
+                        </span>
+                        <span class="menu-title">Dummy</span>
+                    </a>
+                </li>
+                <li class="nav-item menu-items">
+                    <a class="nav-link" href="#">
+                        <!-- pages/charts/chartjs.html -->
+                        <span class="menu-icon">
+                            <i class="mdi mdi-chart-bar"></i>
+                        </span>
+                        <span class="menu-title">Dummy</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_navbar.html -->
+            <nav class="navbar p-0 fixed-top d-flex flex-row">
+                <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+                    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+                </div>
+                <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+                    <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                    <ul class="navbar-nav w-100">
+                        <li class="nav-item w-100">
+                            <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                                <input type="text" class="form-control" placeholder="Search Colleges">
+                            </form>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav navbar-nav-right">
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                                <div class="navbar-profile">
+                                    <img class="img-xs rounded-circle" src="assets/images/faces/face15.jpg" alt="">
+                                    <!-- <p class="mb-0 d-none d-sm-block navbar-profile-name">Henry Klein</p>
+                                    <i class="mdi mdi-menu-down d-none d-sm-block"></i> -->
+                                </div>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                                <h6 class="p-3 mb-0">Profile</h6>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-dark rounded-circle">
+                                            <i class="mdi mdi-settings text-success"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <p class="preview-subject mb-1">Settings</p>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item preview-item">
+                                    <div class="preview-thumbnail">
+                                        <div class="preview-icon bg-dark rounded-circle">
+                                            <i class="mdi mdi-logout text-danger"></i>
+                                        </div>
+                                    </div>
+                                    <div class="preview-item-content">
+                                        <p class="preview-subject mb-1">Log out</p>
+                                    </div>
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <p class="p-3 mb-0 text-center">Advanced settings</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                        <span class="mdi mdi-format-line-spacing"></span>
+                    </button>
+                </div>
+            </nav>
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="col-sm-4 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>Total Students</h5>
+                                    <div class="row">
+                                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                                            <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                                <h2 class="mb-0">45,000</h2>
+                                                <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                                            </div>
+                                            <h6 class="text-muted font-weight-normal">11.38% Since last year</h6>
+                                        </div>
+                                        <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                                            <i class="icon-lg mdi mdi-codepen text-primary ml-auto"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>Placed Students</h5>
+                                    <div class="row">
+                                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                                            <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                                <h2 class="mb-0">45,850</h2>
+                                                <p class="text-success ml-2 mb-0 font-weight-medium">+8.3%</p>
+                                            </div>
+                                            <h6 class="text-muted font-weight-normal"> 9.61% Since last Year</h6>
+                                        </div>
+                                        <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                                            <i class="icon-lg mdi mdi-wallet-travel text-danger ml-auto"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5>Non Placed</h5>
+                                    <div class="row">
+                                        <div class="col-8 col-sm-12 col-xl-8 my-auto">
+                                            <div class="d-flex d-sm-block d-md-flex align-items-center">
+                                                <h2 class="mb-0">20,000</h2>
+                                                <p class="text-danger ml-2 mb-0 font-weight-medium">-2.1% </p>
+                                            </div>
+                                            <h6 class="text-muted font-weight-normal">2.27% Since last year</h6>
+                                        </div>
+                                        <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
+                                            <i class="icon-lg mdi mdi-monitor text-success ml-auto"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <form class="dst" name="form1" id="form1" method="get" action="Institutestud" action="Export">
+                            <label for="cars">Your College:</label>
+                            <select id="cars">
+                                <option value="volvo">Select</option>
+                                <option value="saab">SITL</option>
+                                <option value="opel">SKN-SIT</option>
+                                <option value="audi">SIPS</option>
+                            </select> Year of completion: <select name="year" id="year">
+                                <option value="" selected="selected">Select year</option>
+                                <option value="saab">2016</option>
+                                <option value="opel">2017</option>
+                                <option value="audi">2018</option>
+                                <option value="saab">2019</option>
+                                <option value="opel">2020</option>
+                                <option value="audi">2021</option>
+                                <option value="audi">2022</option>
+                                <option value="audi">2023</option>
+                            </select> Branch: <select name="branch" id="branch">
+                                <option value="" selected="selected">Select branch</option>
+                                <option value="saab">CSE</option>
+                                <option value="opel">IT</option>
+                                <option value="audi">E&TC</option>
+                                <option value="opel">Electrical</option>
+                                <option value="opel">Mechanical</option>
+                            </select> Placed: <select name="placed" id="Place">
+                                <option value="" selected="selected">Select Placed or not</option>
+                                <option value="opel">Yes</option>
+                                <option value="audi">No</option>
+                            </select>
+                            <button type="submit" class="search-btn">Search</button>
+                            <a href="#" class="btn-download">
+                                <i class='bx bxs-cloud-download'></i>
+                                <span class="text">Export To Excel</span>
+                            </a>
+                        </form>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-8 grid-margin stretch-card">
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Recent Updates</h4>
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <!-- <th>
+                                                        <div class="form-check form-check-muted m-0">
+                                                            <label class="form-check-label">
+                                                                <input type="checkbox" class="form-check-input">
+                                                            </label>
+                                                        </div>
+                                                    </th> -->
+                                                    <th> Name </th>
+                                                    <th> College/University </th>
+                                                    <th> Branch </th>
+                                                    <th> ID </th>
+                                                    <!-- <th> Payment Mode </th>
+                                                    <th> Start Date </th> -->
+                                                    <th> Placement Status </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <!-- <td>
+                                                        <div class="form-check form-check-muted m-0">
+                                                            <label class="form-check-label">
+                                                                <input type="checkbox" class="form-check-input">
+                                                            </label>
+                                                        </div>
+                                                    </td> -->
+                                                    <td>
+                                                        <img src="assets/images/faces/face1.jpg" alt="image" />
+                                                        <span class="pl-2">Sweta Pranjya</span>
+                                                    </td>
+                                                    <td> SPPU </td>
+                                                    <td> COE </td>
+                                                    <td> 20010101sppu </td>
+                                                    <!-- <td> Credit card </td>
+                                                    <td> 04 Dec 2019 </td> -->
+                                                    <td>
+                                                        <div class="badge badge-outline-success">YES</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <!-- <td>
+                                                        <div class="form-check form-check-muted m-0">
+                                                            <label class="form-check-label">
+                                                                <input type="checkbox" class="form-check-input">
+                                                            </label>
+                                                        </div>
+                                                    </td> -->
+                                                    <td>
+                                                        <img src="assets/images/faces/face2.jpg" alt="image" />
+                                                        <span class="pl-2">Gyana Ranjan</span>
+                                                    </td>
+                                                    <td> SPPU </td>
+                                                    <td> CSE </td>
+                                                    <td> 20010095sppu </td>
+                                                    <!-- <td> Cash on delivered </td>
+                                                    <td> 04 Dec 2019 </td> -->
+                                                    <td>
+                                                        <div class="badge badge-outline-danger">No</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>
+                                                        <img src="assets/images/faces/face5.jpg" alt="image" />
+                                                        <span class="pl-2">Bhola Shankar</span>
+                                                    </td>
+                                                    <td> SPPU </td>
+                                                    <td> Civil </td>
+                                                    <td> 32565sppu </td>
+
+                                                    <td>
+                                                        <div class="badge badge-outline-success">YES</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>
+                                                        <img src="assets/images/faces/face3.jpg" alt="image" />
+                                                        <span class="pl-2">Suravi Mitra</span>
+                                                    </td>
+                                                    <td>SPPU</td>
+                                                    <td> CS IT </td>
+                                                    <td> 219864sppu </td>
+
+                                                    <td>
+                                                        <div class="badge badge-outline-danger">No</div>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+
+                                                    <td>
+                                                        <img src="assets/images/faces/face4.jpg" alt="image" />
+                                                        <span class="pl-2">Jyoti Ranjan</span>
+                                                    </td>
+                                                    <td>SPPU</td>
+                                                    <td> CSE </td>
+                                                    <td> 224864sppu </td>
+
+                                                    <td>
+                                                        <div class="badge badge-outline-success">YES</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>
+                                                        <img src="assets/images/faces/face4.jpg" alt="image" />
+                                                        <span class="pl-2">Suvam Garnayak</span>
+                                                    </td>
+                                                    <td>SPPU</td>
+                                                    <td> CSE </td>
+                                                    <td> 114864sppu </td>
+                                                    <!-- <td> Credit card </td>
+                                                    <td> 04 Dec 2019 </td> -->
+                                                    <td>
+                                                        <div class="badge badge-outline-danger">No</div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
+    <script src="assets/vendors/jvectormap/jquery-jvectormap.min.js"></script>
+    <script src="assets/vendors/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="assets/vendors/owl-carousel-2/owl.carousel.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="assets/js/off-canvas.js"></script>
+    <script src="assets/js/hoverable-collapse.js"></script>
+    <script src="assets/js/misc.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+</body>
+
+</html>
